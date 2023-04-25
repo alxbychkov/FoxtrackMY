@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./font-awesome5/css/all.min.css">
+    <link href="css/theme.css" rel="stylesheet">
+</head>
+<body>
+<main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll" style="background-image: none;">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img class="img-fluid" src="/images/FoxTrackLogoFull.png" width="190" alt=""></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
+                    <li class="nav-item"><a class="nav-link fw-medium " href="/">Отследить посылку</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium     fw-bold active
+" href="/courier/list">Службы доставки</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium " href="/market/list">Магазины</a></li>
+                </ul>
+                <div class="d-flex py-3 py-lg-0 justify-content-end">
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle btn-light rounded-pill shadow fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="flag-icon flag-icon-ru"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="/courier/list">
+                                <span class="flag-icon flag-icon-ru"></span>
+                                Русский
+                            </a>
+                            <a class="dropdown-item" href="/us/courier/list">
+                                <span class="flag-icon flag-icon-us"></span>
+                                English
+                            </a>
+                            <a class="dropdown-item" href="/ua/courier/list">
+                                <span class="flag-icon flag-icon-ua"></span>
+                                Український
+                            </a>
+                            <a class="dropdown-item" href="/kz/courier/list">
+                                <span class="flag-icon flag-icon-kz"></span>
+                                қазақ
+                            </a>
+                            <a class="dropdown-item" href="/de/courier/list">
+                                <span class="flag-icon flag-icon-de"></span>
+                                Deutsch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-6 order-md-1 pt-8">
+                    <img class="img-fluid" src="/images/website/top_image3.webp" alt=""></div>
+                <div class="col-md-7 col-lg-6 text-center text-md-start pt-5 pt-md-9">
+                    <h1 class="mb-4 display-3 fw-bold">
+                        Отслеживание посылок и&nbsp;почтовых отправлений по трек-номеру</h1>
+                    <form class="mt-4 mb-4" id="tracking-form" method="post" action="/ru/tracking">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" name="trackNumber" placeholder="Введите трек-номер посылки..." value="" style="border-radius: 15px 0 0 15px;">
+                            <div class="input-group-append">
+                                <button class="btn btn-lg btn-info rounded-pill" type="submit" style="border-radius: 0 15px 15px 0;"><i class="fa fa-search"></i> <span>Отследить посылку</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4">
+        <div class="container">
+            <div class="row block-services-wrapper">
+               <div class="col-12 col-lg-9 block-services bg-soft-info rounded-3">
+                    <div class="block-services-header">
+                       <h2>Почтовые службы</h2>
+                        <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam fuga earum vitae obcaecati nihil, iure repellat nostrum facilis adipisci maxime nobis doloribus explicabo nisi qui odit sint quia consequuntur praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam fuga earum vitae obcaecati nihil, iure repellat nostrum facilis adipisci maxime nobis doloribus explicabo nisi qui odit sint quia consequuntur praesentium.</p>
+                    </div>
+                    <hr>
+                    <div class="col-12 block-services-search">
+                        <div class="col-12 col-lg-8 mx-auto">
+                            <form class="my-4" id="tracking-form" method="post" action="/ru/tracking">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" name="trackNumber" placeholder="Введите трек-номер посылки..." value="" style="border-radius: 15px 0 0 15px;">
+                                    <div class="input-group-append  text-center">
+                                        <button class="btn btn-lg btn-primary rounded-pill" type="submit" style="border-radius: 0 15px 15px 0;"><i class="fa fa-search"></i><span>Найти службу</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row block-services-in mx-1" id="postserv">
+                       <div class="col-12 col-xl-6 mb-3 ps-0">
+                            <div class="block-services-item mt-3">
+                                <img src="img/services/post-donbass.png" class="courier" alt=""/>
+                                <div class="block-popular-text">
+                                    <p class="h5">Почта Донбасса</p>
+                                    <p class="txt">Почтовые переводы в ДНР и между ДНР и ЛНР</p>
+                                    <p class="mb-0"><a href="/postservice/russian-post">Отследить Почта Донбасса</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6 mb-3 ps-0">
+                            <div class="block-services-item my-3">
+                                <img src="img/services/post-donbass.png" class="courier" alt=""/>
+                                <div class="block-popular-text">
+                                    <p class="h5">Почта Донбасса</p>
+                                    <p class="txt">Почтовые переводы в ДНР и между ДНР и ЛНР</p>
+                                    <p class="mb-0"><a href="/postservice/russian-post">Отследить Почта Донбасса</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6 mb-3 ps-0">
+                            <div class="block-services-item my-3">
+                                <img src="img/services/post-donbass.png" class="courier" alt=""/>
+                                <div class="block-popular-text">
+                                    <p class="h5">Почта Донбасса</p>
+                                    <p class="txt">Почтовые переводы в ДНР и между ДНР и ЛНР</p>
+                                    <p class="mb-0"><a href="/postservice/russian-post">Отследить Почта Донбасса</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6 mb-3 ps-0">
+                            <div class="block-services-item my-3">
+                                <img src="img/services/post-donbass.png" class="courier" alt=""/>
+                                <div class="block-popular-text">
+                                    <p class="h5">Почта Донбасса</p>
+                                    <p class="txt">Почтовые переводы в ДНР и между ДНР и ЛНР</p>
+                                    <p class="mb-0"><a href="/postservice/russian-post">Отследить Почта Донбасса</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="sidebar col-12 col-lg-3">
+                    <div class="row text-center rounded-3">
+                        <div class="col-12">
+                            <div class="reclama-item">РЕКЛАМА</div>
+                        </div>
+                        <h2 class="col-12">Телеграм-бот</h2>
+        
+                        <div class="col-12 image-slider-adv mt-2">
+                            <div class="image-slider_wrapper swiper-wrapper">
+                                <div class="image-slider_slide swiper-slide">
+                                    <div class="image-slider_img">
+                                        <img src="img/screens/image1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="image-slider_slide swiper-slide"
+                                    style="display:flex; justify-content: space-evenly;">
+                                    <div class="image-slider_img">
+                                        <img src="img/screens/image2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="image-slider_slide swiper-slide"
+                                    style="display:flex; justify-content: space-evenly;">
+                                    <div class="image-slider_img">
+                                        <img src="img/screens/image3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="image-slider_slide swiper-slide"
+                                    style="display:flex; justify-content: space-evenly;">
+                                    <div class="image-slider_img">
+                                        <img src="img/screens/image4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="image-slider_slide swiper-slide"
+                                    style="display:flex; justify-content: space-evenly;">
+                                    <div class="image-slider_img">
+                                        <img src="img/screens/image5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="image-slider_slide swiper-slide"
+                                    style="display:flex; justify-content: space-evenly;">
+                                    <div class="image-slider_img">
+                                        <img src="img/screens/image6.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row px-3 px-md-0 slider-bottom mx-auto">
+                                <div class="col-12 position-relative">
+                                    <ol class="carousel-indicators">
+                                        <li class="active" data-bs-target="#carouselExampleDark"
+                                            data-bs-slide-to="0" aria-current="true"></li>
+                                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="">
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="col-12">
+                            <div class="reclama-item"></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="reclama-item"></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <section class="py-6 pb-0 mb-4">
+        <div class="container">
+            <hr class="text-info opacity-25 mb-5">
+            <div class="row justify-content-lg-around">
+                <div class="col-12 col-sm-12 col-lg-3 mb-4 order-0 order-sm-0">
+                    <a class="text-decoration-none" href="#">
+                        <img class="img-fluid me-3" src="/images/FoxTrackLogoFull.png" width="160" alt="">
+                    </a>
+                    <p class="mt-4">Warehouse Society, 234 <br>Bahagia Ave Street PRBW 29281</p>
+                    <p>info@warehouse.project<br>1-232-3434 (Main) </p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 mb-3 order-2 order-sm-1">
+                    <h6 class="lh-lg fw-bold mb-4">About</h6>
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Profile</a></li>
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Features</a></li>
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Careers</a></li>
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">DW News</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
+                    <h6 class="lh-lg fw-bold mb-4"> Help </h6>
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Support</a></li>
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Sign Up </a></li>
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Guide</a></li>
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Reports</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-3 mb-3 order-1 order-sm-3">
+                    <h6 class="lh-lg fw-bold mb-4"> Help </h6>
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Support</a></li>
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Sign Up </a></li>
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Guide</a></li>
+                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="/js/popperjs/popper.min.js"></script>
+<script src="/js/jquery/jquery.min.js" crossorigin="anonymous"></script>
+<script src="/js/bootstrap/bootstrap.min.js"></script>
+<script src="/js/is/is.min.js"></script>
+<script src="/js/theme.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
