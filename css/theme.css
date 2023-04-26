@@ -21120,7 +21120,7 @@ label {
     width: 2.5rem;
     border-radius: 2rem;
     flex: 0 0 2.5rem;
-    margin: 5px 20px;
+    margin: 2px 20px;
 }
 
 .timelineBody .timeline .timelineDot::after {
@@ -21136,7 +21136,7 @@ label {
 .timelineBody .timeline .timelineDot-delivered {
     background: #f9fafd;
     border: 3px solid #19cc4b;
-    box-shadow: 0px 0px 15px #19cc4b;
+    box-shadow: 0px 0px 8px 4px #19cc4b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21144,14 +21144,14 @@ label {
     z-index: 1;
 }
 
-.timelineBody .timeline .timelineDot-delivered::after {
-/*    background: #ef4f41;*/
-}
+.timelineBody .timeline .timelineDot-delivered::after {}
+
+
 
 .timelineBody .timeline .timelineDot-available_for_pickup {
     background: #f9fafd;
     border: 3px solid #faa53f;
-    box-shadow: 0px 0px 15px #faa53f;
+    box-shadow: 0px 0px 8px 4px #faa53f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21166,7 +21166,7 @@ label {
 .timelineBody .timeline .timelineDot-transit {
     background: #f9fafd;
     border: 3px solid #568fe4;
-    box-shadow: 0px 0px 20px #568fe4;
+    box-shadow: 0px 0px 8px 4px #568fe4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21181,13 +21181,13 @@ label {
 .timelineBody .timeline .timelineDate {
     font-size: 1rem;
     flex: 0 0 100px;
-    padding: 0.2rem;
+    /* padding: 0.2rem; */
     font-weight: 500;
 }
 
 .timelineBody .timeline .timelineWork {
     font-family: inherit;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     /*flex: 0 0 170px;*/
     display: flex;
     flex-direction: column;
@@ -21218,18 +21218,22 @@ label {
     margin: 4px 0px 12px 0px;
 }
 
+
 .timelineBody::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #F5F5F5;
+    border-radius: 100px;
 }
 
 .timelineBody::-webkit-scrollbar {
     width: 6px;
     background-color: #F5F5F5;
+    border-radius: 100px;
 }
 
 .timelineBody::-webkit-scrollbar-thumb {
     background-color: #7366ff;
+    border-radius: 100px;
 }
 
 .timelineService {
@@ -21253,9 +21257,9 @@ label {
 
 .button-map {
     border-radius: 10px;
-    box-shadow: 1px 1px 4px #a7a9b1;
+    /* box-shadow: 1px 1px 4px #a7a9b1; */
     display: flex;
-    padding: 6px 12px 3px 12px;
+    padding: 6px 12px 6px 12px;
     align-items: center;
     justify-content: center;
     background: #f0f0f2;
@@ -21264,7 +21268,7 @@ label {
 .timelineService img {
     width: 26px;
     margin-left: 1rem;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     border-radius: 6px;
 }
 
@@ -21302,6 +21306,24 @@ label {
     border-radius: 15px;
     color: white;
 }
+
+.fa.fa-truck {
+display: block;
+margin-top: 6px;
+}
+
+@media screen and (min-width: 992px) {
+    .parcel {
+        border-left: 10px solid #fff;
+    }
+}
+
+/* @media screen and (max-width: 991px) {
+    .tracking-head {
+        padding: 2rem !important;
+    }
+} */
+
 .parcel-block img {
     border-radius: 15px;
 }
