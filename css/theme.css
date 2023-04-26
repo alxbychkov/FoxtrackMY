@@ -21097,14 +21097,29 @@ label {
     position: absolute;
     width: 1px;
     background: #568fe4;
-    top: -28px;
-    bottom: 0;
+    /* top: -28px; */
+    top: 76px;
+    /* bottom: 0; */
     margin: auto 0px;
     right: auto;
     left: 172px;
-    height: 93%;
+    height: calc(100% - 178px);
     z-index: -1;
     box-shadow: 0 0 8px rgb(13 110 253), 0 1px 0 rgb(13 110 253);
+}
+
+.timeline li:last-child::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    background: #f5f0fc;
+    top: 23px;
+    bottom: 0;
+    margin: auto 0px;
+    right: auto;
+    left: 128px;
+    height: 100%;
+    z-index: -1;
 }
 
 .timelineBody .timeline li {
@@ -21218,6 +21233,17 @@ label {
     margin: 4px 0px 12px 0px;
 }
 
+.timelineDot-delivered + .timelineWorkService .timelineWork-description {
+    background: #19cc4b;
+}
+
+.timelineDot-available_for_pickup + .timelineWorkService .timelineWork-description {
+    background: #faa53f;
+}
+
+.timelineDot-transit + .timelineWorkService .timelineWork-description {
+    background: #568fe4;
+}
 
 .timelineBody::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -21244,15 +21270,24 @@ label {
 }
 
 .timelineWorkService {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     width: 82%;
     background: #ffff;
     padding: 1.2rem;
     border-radius: 15px;
     margin-top: -1.2rem;
+}
+
+.timelineWorkService-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.workservice-map {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
 }
 
 .button-map {
@@ -21263,6 +21298,8 @@ label {
     align-items: center;
     justify-content: center;
     background: #f0f0f2;
+    border: none;
+    outline: none;
 }
 
 .timelineService img {
@@ -21427,21 +21464,32 @@ margin-top: 6px;
 }
     .timelineBody .timeline:before {
     left: 30px;
-    top: -110px;
-    height: 96%;
+    /* top: -110px;
+    height: 96%; */
+    top: 20px;
+    height: calc(100% - 220px);
 }
+
+.timeline li:last-child::after {
+    left: 15px;
+}
+
     .timelineBody .timeline {
     padding: 0 1rem 0 0 !important;
 }
 
     .timelineWorkService {
-    display: flex;
-    flex-direction: column;
     width: 82%;
-    align-items: flex-start;
     padding: 1rem;
     margin-top: 0rem;
 }
+
+.timelineWorkService-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
     .timelineService {
     display: flex;
     flex-direction: row;

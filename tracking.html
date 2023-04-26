@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="css/theme.css" rel="stylesheet">
@@ -11,535 +12,630 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 </head>
+
 <body>
-<main class="main" id="top">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 shadow-transition" data-navbar-on-scroll="data-navbar-on-scroll" style="background-image: none; background-color: rgb(255, 255, 255);">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img class="img-fluid" src="/img/website/FoxTrackLogoFull.png" width="190" alt=""></a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
-                    <li class="nav-item"><a class="nav-link fw-medium     fw-bold active
+    <main class="main" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 shadow-transition"
+            data-navbar-on-scroll="data-navbar-on-scroll"
+            style="background-image: none; background-color: rgb(255, 255, 255);">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img class="img-fluid" src="/img/website/FoxTrackLogoFull.png" width="190" alt=""></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
+                        <li class="nav-item"><a class="nav-link fw-medium     fw-bold active
 " href="/">Отследить посылку</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium " href="/courier/list">Службы доставки</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium " href="/market/list">Магазины</a></li>
-                </ul>
-                <div class="d-flex py-3 py-lg-0 justify-content-end">
-                    <div class="btn-group">
-                        <button type="button" class="btn dropdown-toggle btn-light rounded-pill shadow fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="flag-icon flag-icon-ru"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="/tracking/LC157686252CN">
-                                <span class="flag-icon flag-icon-ru"></span>
-                                Русский
-                            </a>
-                            <a class="dropdown-item" href="/us/tracking/LC157686252CN">
-                                <span class="flag-icon flag-icon-us"></span>
-                                English
-                            </a>
-                            <a class="dropdown-item" href="/ua/tracking/LC157686252CN">
-                                <span class="flag-icon flag-icon-ua"></span>
-                                Український
-                            </a>
-                            <a class="dropdown-item" href="/kz/tracking/LC157686252CN">
-                                <span class="flag-icon flag-icon-kz"></span>
-                                қазақ
-                            </a>
-                            <a class="dropdown-item" href="/de/tracking/LC157686252CN">
-                                <span class="flag-icon flag-icon-de"></span>
-                                Deutsch
-                            </a>
+                        <li class="nav-item"><a class="nav-link fw-medium " href="/courier/list">Службы доставки</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fw-medium " href="/market/list">Магазины</a></li>
+                    </ul>
+                    <div class="d-flex py-3 py-lg-0 justify-content-end">
+                        <div class="btn-group">
+                            <button type="button" class="btn dropdown-toggle btn-light rounded-pill shadow fw-bold"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="flag-icon flag-icon-ru"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="/tracking/LC157686252CN">
+                                    <span class="flag-icon flag-icon-ru"></span>
+                                    Русский
+                                </a>
+                                <a class="dropdown-item" href="/us/tracking/LC157686252CN">
+                                    <span class="flag-icon flag-icon-us"></span>
+                                    English
+                                </a>
+                                <a class="dropdown-item" href="/ua/tracking/LC157686252CN">
+                                    <span class="flag-icon flag-icon-ua"></span>
+                                    Український
+                                </a>
+                                <a class="dropdown-item" href="/kz/tracking/LC157686252CN">
+                                    <span class="flag-icon flag-icon-kz"></span>
+                                    қазақ
+                                </a>
+                                <a class="dropdown-item" href="/de/tracking/LC157686252CN">
+                                    <span class="flag-icon flag-icon-de"></span>
+                                    Deutsch
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 col-lg-6 order-md-1 pt-8">
-                    <img class="img-fluid" src="/img/website/top_image3.webp" alt=""></div>
-                <div class="col-md-7 col-lg-6 text-center text-md-start pt-5 pt-md-9">
-                    <h1 class="mb-4 display-3 fw-bold">
-                        Отслеживание посылок и&nbsp;почтовых отправлений по&nbsp;трек-номеру</h1>
-                    <form class="mt-4 mb-4" id="tracking-form" method="post" action="/ru/tracking">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" name="trackNumber" placeholder="Введите трек-номер посылки..." value="LC157686252CN" style="border-radius: 15px 0 0 15px;">
-                            <div class="input-group-append">
-                                <button class="btn btn-lg btn-info rounded-pill" type="submit" style="border-radius: 0 15px 15px 0;"><i class="fa fa-search"></i> Отследить посылку</button>
+        </nav>
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-lg-6 order-md-1 pt-8">
+                        <img class="img-fluid" src="/img/website/top_image3.webp" alt="">
+                    </div>
+                    <div class="col-md-7 col-lg-6 text-center text-md-start pt-5 pt-md-9">
+                        <h1 class="mb-4 display-3 fw-bold">
+                            Отслеживание посылок и&nbsp;почтовых отправлений по&nbsp;трек-номеру</h1>
+                        <form class="mt-4 mb-4" id="tracking-form" method="post" action="/ru/tracking">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" name="trackNumber"
+                                    placeholder="Введите трек-номер посылки..." value="LC157686252CN"
+                                    style="border-radius: 15px 0 0 15px;">
+                                <div class="input-group-append">
+                                    <button class="btn btn-lg btn-info rounded-pill" type="submit"
+                                        style="border-radius: 0 15px 15px 0;"><i class="fa fa-search"></i> Отследить
+                                        посылку</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-              <div class="row mb-4 d-flex align-items-start bg-light rounded-3 p-lg-5 p-4">
-                    <div class="col-6 col-md-8 col-lg-2 ps-0">
-                        <div class="status text-left  flex-md-row flex-lg-column justify-content-evenly mt-md-1 mt-lg-0">
-                            <h3>C157686252CN</h3>
-                            <span>ДОСТАВЛЕНА</span>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="row mb-4 d-flex align-items-start bg-light rounded-3 p-lg-5 p-4">
+                        <div class="col-6 col-md-8 col-lg-2 ps-0">
+                            <div
+                                class="status text-left  flex-md-row flex-lg-column justify-content-evenly mt-md-1 mt-lg-0">
+                                <h3>C157686252CN</h3>
+                                <span>ДОСТАВЛЕНА</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <p class="text-muted my-0 ms-lg-3">Последнее обновление:<br>03-04-2023 21:06:24</p>
+                        </div>
+                        <div
+                            class="col-10 col-md-11 col-lg-5 d-flex justify-content-lg-evenly justify-content-md-around justify-content-between align-items-start mt-5 mt-lg-0">
+                            <div class="me-md-5 me-lg-0">
+                                <div><img src="img/website/geo-alt.svg"> <strong> Китай</strong></div>
+                                <p class="mb-0">03-04-2021</p>
+                            </div>
+                            <div class="me-md-5 me-lg-0"><i class="far fa-truck"></i></div>
+                            <div><img src="img/website/geo-alt.svg"> <strong> Российская Федерация</strong>
+                                <p class="mb-0">03-04-2023</p>
+                            </div>
+                        </div>
+                        <div class="col-2 col-md-1 col-lg-2 text-center mt-5 mt-lg-0"><img
+                                class="col-9 col-md-12 col-lg-3" src="img/services/miao-international-logistics.png"
+                                alt="40" style="border-radius: 6px;"></div>
+                    </div>
+
+                    <div class="col-12 col-lg-9 rounded-3 bg-soft-info pt-4 pb-4">
+                        <div class="timelineBody">
+                            <ul class="timeline">
+                                <li class="first">
+                                    <div class="timelineDate">2023-04-01 14:49:24</div>
+                                    <div class="timelineDot timelineDot-delivered">
+                                        <i class="far fa-hand-holding-box"></i>   
+                                    </div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">Доставленo</div>
+                                                    <small>Посылка у получателя</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 14:49:24</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex align-items-start">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <button class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-1" aria-expanded="false" aria-controls="workservice-map-1">
+                                                    <i class="far fa-map"></i>
+                                                </button >
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-1"></div>
+                                    </div>
+
+
+                                </li>
+                                <li class="">
+                                    <div class="timelineDate">2023-04-01 12:19:57</div>
+                                    <div class="timelineDot timelineDot-available_for_pickup"><i
+                                            class="far fa-mailbox"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пункте самовывоза</div>
+                                                    <small>Посылка в пункте самовывоза.</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 12:19:57</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-2" aria-expanded="false" aria-controls="workservice-map-2">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-2"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-04-01 08:18:29</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-3" aria-expanded="false" aria-controls="workservice-map-3">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-3"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-31 17:18:07</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-4" aria-expanded="false" aria-controls="workservice-map-4">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-4"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-28 17:09:18</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-5" aria-expanded="false" aria-controls="workservice-map-5">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-5"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-28 16:22:24</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-6" aria-expanded="false" aria-controls="workservice-map-6">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-6"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-28 14:25:17</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-7" aria-expanded="false" aria-controls="workservice-map-7">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-7"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-28 12:17:21</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-8" aria-expanded="false" aria-controls="workservice-map-8">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-8"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-28 04:58:00</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-9" aria-expanded="false" aria-controls="workservice-map-9">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-9"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-27 23:52:00</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-10" aria-expanded="false" aria-controls="workservice-map-10">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-10"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-27 12:47:00</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-11" aria-expanded="false" aria-controls="workservice-map-11">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-11"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-25 08:40:06</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-12" aria-expanded="false" aria-controls="workservice-map-12">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-12"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-24 12:29:35</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-13" aria-expanded="false" aria-controls="workservice-map-13">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-13"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-24 12:29:34</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-14" aria-expanded="false" aria-controls="workservice-map-14">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-14"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-22 21:51:54</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-15" aria-expanded="false" aria-controls="workservice-map-15">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-15"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timelineDate">2023-03-22 19:57:54</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-16" aria-expanded="false" aria-controls="workservice-map-16">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-16"></div>
+                                    </div>
+                                </li>
+                                <li class="mb-0">
+                                    <div class="timelineDate">2023-03-22 19:57:53</div>
+                                    <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
+                                    <div class="timelineWorkService">
+                                        <div class="timelineWorkService-wrapper">
+                                            <div class="d-flex justify-content-between" style="width: 100%">
+                                                <div class="timelineWork">
+                                                    <div class="timelineWork-description">В пути</div>
+                                                    <small>[Первоуральск г] Посылка отправлена из сортировочного центра
+                                                        страны/региона назначения</small>
+                                                </div>
+                                                <div class="timelineDate-sm">2023-04-01 08:18:29</div>
+                                            </div>
+                                            <div class="timelineService">
+                                                <div class="mb-3 d-flex">Cainiao
+                                                    <img src="img/services/miao-international-logistics.png" alt="">
+                                                </div>
+                                                <div class="button-map" data-bs-toggle="collapse" data-bs-target="#workservice-map-17" aria-expanded="false" aria-controls="workservice-map-17">
+                                                    <i class="far fa-map"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="workservice-map collapse" id="workservice-map-17"></div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <p class="text-muted my-0 ms-lg-3">Последнее обновление:<br>03-04-2023 21:06:24</p>
-                    </div>
-                    <div class="col-10 col-md-11 col-lg-5 d-flex justify-content-lg-evenly justify-content-md-around justify-content-between align-items-start mt-5 mt-lg-0">
-                        <div class="me-md-5 me-lg-0">
-                            <div><img src="img/website/geo-alt.svg"> <strong> Китай</strong></div>
-                            <p class="mb-0">03-04-2021</p>
+                    <div class="col-12 col-lg-3 parcel mt-4 mt-lg-0 rounded-3">
+                        <div class="parcel-block info">
+                            <img class="col-12 mb-6" src="img/website/Barcode.png" alt="">
+                            <h4 class="text-center mb-4">Информация о посылке</h4>
+                            <ul class="list-unstyled parcel-attributes">
+                                <li><span>Номер посылки:</span><span class="value">LC157686252CN</span></li>
+                                <hr>
+                                <li><span>Тип посылки:</span><span class="value">Мелкий пакет</span></li>
+                                <hr>
+                                <li><span>Получатель:</span><span class="value">Шестаков В. А.</span></li>
+                                <hr>
+                                <li><span>Индекс получателя:</span><span class="value">623131</span></li>
+                                <hr>
+                                <li><span>Страна получателя:</span><span class="value">Россия</span></li>
+                                <hr>
+                                <li><span>Город получателя:</span><span class="value">Новоуткинск</span></li>
+                                <hr>
+                                <li><span>Отправитель:</span><span class="value">Huang GuangQun</span></li>
+                                <hr>
+                                <li><span>Вес посылки:</span><span class="value">374 г.</span></li>
+                                <hr>
+                                <li><span>Дней в пути:</span><span class="value">8</span></li>
+                            </ul>
+                            <button class="btn btn-lg btn-info mt-5 ms-2">Поделиться</button>
                         </div>
-                        <div class="me-md-5 me-lg-0"><i class="far fa-truck"></i></div>
-                        <div><img src="img/website/geo-alt.svg"> <strong> Российская Федерация</strong>
-                        <p class="mb-0">03-04-2023</p>
-                        </div>
                     </div>
-                    <div class="col-2 col-md-1 col-lg-2 text-center mt-5 mt-lg-0"><img class="col-9 col-md-12 col-lg-3" src="img/services/miao-international-logistics.png" alt="40" style="border-radius: 6px;"></div>
-            </div>
-
-            <div class="col-12 col-lg-9 rounded-3 bg-soft-info pt-4 pb-4">
-                <div class="timelineBody">
-                    <ul class="timeline">
-                        <li class="first">
-                            <div class="timelineDate">2023-04-01 14:49:24</div>
-                            <div class="timelineDot timelineDot-delivered">
-                                <i class="far fa-hand-holding-box"></i>
-                            </div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">Доставленo</div>
-                                        <small>Посылка у получателя</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-04-01 14:49:24</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex align-items-start">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </li>
-                        <li class="">
-                            <div class="timelineDate">2023-04-01 12:19:57</div>
-                            <div class="timelineDot timelineDot-available_for_pickup"><i class="far fa-mailbox"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пункте самовывоза</div>
-                                        <small>Посылка в пункте самовывоза.</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-04-01 12:19:57</div>
-                                </div>
-                                <div class="timelineService">
-                                <div class="mb-3 d-flex">Cainiao
-                                    <img src="img/services/miao-international-logistics.png" alt="">
-                                </div>
-                                <div class="button-map">
-                                <i class="far fa-map"></i>
-                                </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-04-01 08:18:29</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>[Первоуральск г] Посылка отправлена из сортировочного центра страны/региона назначения</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-04-01 08:18:29</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-31 17:18:07</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>[Екатеринбург г] Посылка отправлена из сортировочного центра страны/региона назначения</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-31 17:18:07</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-28 17:09:18</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>[Новосибирск г] Посылка отправлена из сортировочного центра страны/региона назначения</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-28 17:09:18</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-28 16:22:24</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>[Новосибирск г] Посылка прибыла в сортировочный центр страны/региона назначения</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-28 16:22:24</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-28 14:25:17</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>Посылка получена местной транспортной компанией</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-28 14:25:17</div>
-                                </div>
-
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-28 12:17:21</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>Таможенное оформление импорта завершено</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-28 12:17:21</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-28 04:58:00</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>Посылка прибыла в офис Linehaul</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-28 04:58:00</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-27 23:52:00</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>Отправление из страны/региона отправления</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-27 23:52:00</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-27 12:47:00</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>Отправление из страны/региона отправления</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-27 12:47:00</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-25 08:40:06</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>Отправление из транзитной страны/региона</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-25 08:40:06</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-24 12:29:35</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>Принимается к перевозке почтовой службой</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-24 12:29:35</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-24 12:29:34</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>Посылка прибыла в транзитную страну/регион</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-24 12:29:34</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-22 21:51:54</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>[г. Шатян] Отправление из сортировочного центра</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-22 21:51:54</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timelineDate">2023-03-22 19:57:54</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>[г. Шатянь] Обработка в сортировочном центре</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-22 19:57:54</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mb-0">
-                            <div class="timelineDate">2023-03-22 19:57:53</div>
-                            <div class="timelineDot timelineDot-transit"><i class="far fa-truck"></i></div>
-                            <div class="timelineWorkService">
-                                <div class="d-flex justify-content-between" style="width: 100%">
-                                    <div class="timelineWork">
-                                        <div class="timelineWork-description">В пути</div>
-                                        <small>Посылка в сортировочном центре</small>
-                                    </div>
-                                    <div class="timelineDate-sm">2023-03-22 19:57:53</div>
-                                </div>
-                                <div class="timelineService">
-                                    <div class="mb-3 d-flex">Cainiao
-                                        <img src="img/services/miao-international-logistics.png" alt="">
-                                    </div>
-                                    <div class="button-map">
-                                        <i class="far fa-map"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 parcel mt-4 mt-lg-0 rounded-3">
-                <div class="parcel-block info">
-                    <img class="col-12 mb-6" src="img/website/Barcode.png" alt="">
-                    <h4 class="text-center mb-4">Информация о посылке</h4>
-                    <ul class="list-unstyled parcel-attributes">
-                        <li><span>Номер посылки:</span><span class="value">LC157686252CN</span></li><hr>
-                        <li><span>Тип посылки:</span><span class="value">Мелкий пакет</span></li><hr>
-                        <li><span>Получатель:</span><span class="value">Шестаков В. А.</span></li><hr>
-                        <li><span>Индекс получателя:</span><span class="value">623131</span></li><hr>
-                        <li><span>Страна получателя:</span><span class="value">Россия</span></li><hr>
-                        <li><span>Город получателя:</span><span class="value">Новоуткинск</span></li><hr>
-                        <li><span>Отправитель:</span><span class="value">Huang GuangQun</span></li><hr>
-                        <li><span>Вес посылки:</span><span class="value">374 г.</span></li><hr>
-                        <li><span>Дней в пути:</span><span class="value">8</span></li>
-                    </ul>
-                    <button class="btn btn-lg btn-info mt-5 ms-2">Поделиться</button>
+        </section>
+        <section class="py-6 pb-0 mb-4">
+            <div class="container">
+                <hr class="text-info opacity-25 mb-5">
+                <div class="row justify-content-lg-around">
+                    <div class="col-12 col-sm-12 col-lg-3 mb-4 order-0 order-sm-0">
+                        <a class="text-decoration-none" href="#">
+                            <img class="img-fluid me-3" src="/img/website/FoxTrackLogoFull.png" width="160" alt="">
+                        </a>
+                        <p class="mt-4">Warehouse Society, 234 <br>Bahagia Ave Street PRBW 29281</p>
+                        <p>info@warehouse.project<br>1-232-3434 (Main) </p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-2 order-sm-1">
+                        <h6 class="lh-lg fw-bold mb-4">About</h6>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Profile</a></li>
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Features</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Careers</a></li>
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">DW News</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
+                        <h6 class="lh-lg fw-bold mb-4"> Help </h6>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Support</a></li>
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Sign Up </a>
+                            </li>
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Guide</a></li>
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Reports</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-4 col-lg-3 mb-3 order-1 order-sm-3">
+                        <h6 class="lh-lg fw-bold mb-4"> Help </h6>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Support</a></li>
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Sign Up </a>
+                            </li>
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Guide</a></li>
+                            <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Reports</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-6 pb-0 mb-4">
-        <div class="container">
-            <hr class="text-info opacity-25 mb-5">
-            <div class="row justify-content-lg-around">
-                <div class="col-12 col-sm-12 col-lg-3 mb-4 order-0 order-sm-0">
-                    <a class="text-decoration-none" href="#">
-                        <img class="img-fluid me-3" src="/img/website/FoxTrackLogoFull.png" width="160" alt="">
-                    </a>
-                    <p class="mt-4">Warehouse Society, 234 <br>Bahagia Ave Street PRBW 29281</p>
-                    <p>info@warehouse.project<br>1-232-3434 (Main) </p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-3 mb-3 order-2 order-sm-1">
-                    <h6 class="lh-lg fw-bold mb-4">About</h6>
-                    <ul class="list-unstyled mb-md-4 mb-lg-0">
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Profile</a></li>
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Features</a></li>
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Careers</a></li>
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">DW News</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
-                    <h6 class="lh-lg fw-bold mb-4"> Help </h6>
-                    <ul class="list-unstyled mb-md-4 mb-lg-0">
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Support</a></li>
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Sign Up </a></li>
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Guide</a></li>
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Reports</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-4 col-lg-3 mb-3 order-1 order-sm-3">
-                    <h6 class="lh-lg fw-bold mb-4"> Help </h6>
-                    <ul class="list-unstyled mb-md-4 mb-lg-0">
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Support</a></li>
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Sign Up </a></li>
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Guide</a></li>
-                        <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Reports</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<script src="js/popperjs/popper.min.js"></script>
-<script src="js/jquery/jquery.min.js" crossorigin="anonymous"></script>
-<script src="js/bootstrap/bootstrap.min.js"></script>
-<script src="js/is/is.min.js"></script>
-<script src="js/theme.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+        </section>
+    </main>
+    <script src="js/popperjs/popper.min.js"></script>
+    <script src="js/jquery/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/is/is.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
