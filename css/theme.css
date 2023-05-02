@@ -3573,9 +3573,9 @@ button[type="submit"]:hover {
     transition: all .4s ease-in-out;
 }
 
-button[type="submit"] .fa-search {
+/* button[type="submit"] .fa-search {
     display: none;
-}
+} */
 
 .searchbar {
     display: flex;
@@ -3583,7 +3583,7 @@ button[type="submit"] .fa-search {
     gap: 0.48rem;
 }
 
-.searchbar span {
+.searchbar a {
     color: #607494;
     background: #d8dee8;;
     font-weight: 600;
@@ -3593,6 +3593,7 @@ button[type="submit"] .fa-search {
     padding: 0.2rem 0.8rem;
     cursor: pointer;
     font-size: 14px;
+    text-decoration: none;
     /*width: calc(100% / 6 - 0.4rem);*/
 }
 
@@ -3620,7 +3621,7 @@ button[type="submit"] .fa-search {
         display: block;
     }
 
-    .searchbar span {
+    .searchbar a {
         font-size: 12px;
     }
 }
@@ -3638,8 +3639,7 @@ button[type="submit"] .fa-search {
     justify-content: space-around;
 }
 .block-services img {
-    width: 18%;
-    height: 100%;
+    width: 100%;
     margin-bottom: 1rem;
     margin-right: 0.8rem;
 }
@@ -7601,13 +7601,13 @@ fieldset:disabled .btn {
 
 .section-slider .container {
     background: linear-gradient(49deg, rgba(200,153,214,1) 0%, rgba(183,125,206,1) 20%, rgba(132,81,211,1) 65%, rgba(141,85,218,1) 100%);
-    padding: 60px 60px 90px 60px;
+    padding: 30px 60px 80px 60px;
     border-radius: 80px;
 }
 
 @media screen and (max-width: 767px) {
     .section-slider .container {
-        padding: 40px 40px 80px 40px;
+        padding: 20px 40px 80px 40px;
         border-radius: 50px;
     }
 }
@@ -7647,6 +7647,10 @@ fieldset:disabled .btn {
     height: 100%;
 }
 
+.image-slider {
+    /* max-height: 350px; */
+}
+
 .image-slider-adv,
 .image-slider {
     position: relative;
@@ -7662,7 +7666,7 @@ fieldset:disabled .btn {
 
 .slider-bottom {
     position: absolute;
-    bottom: -10%;
+    bottom: -15%;
     left: 0;
     width: 100%;
 }
@@ -7675,14 +7679,14 @@ fieldset:disabled .btn {
     max-width: 100%;
     /* position: absolute; */
     height: auto;
-    /* object-fit: cover; */
+    object-fit: cover;
     border-radius: 20px;
     border: 3px solid white;
 }
 
 .swiper-slide img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    /* height: 100%; */
 }
 
 .carousel-icons {
@@ -7696,10 +7700,23 @@ fieldset:disabled .btn {
 .section-slider p {
     color: #fff6f7;
     font-size: 1.4rem;
+    margin: 0;
 }
 
 .image-slider-adv .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background: rgba(133,89,192,1);
+}
+
+@media screen and (max-width: 1539px) {
+    .slider-bottom {
+        bottom: -19%;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width: 1200px) {
+    .slider-bottom {
+        bottom: -12%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -21112,7 +21129,7 @@ label {
     content: '';
     position: absolute;
     width: 30px;
-    background: #f5f0fc;
+    background: #f9f9f9;
     top: 23px;
     bottom: 0;
     margin: auto 0px;
@@ -21128,6 +21145,10 @@ label {
     justify-content: flex-start;
     margin-bottom: 4rem;
     position: relative;
+}
+
+.timelineBody .timeline li:last-child {
+    margin-bottom: 0;
 }
 
 .timelineBody .timeline .timelineDot {
@@ -21273,7 +21294,7 @@ label {
     width: 82%;
     background: #ffff;
     padding: 1.2rem;
-    border-radius: 15px;
+    border-radius: 35px;
     margin-top: -1.2rem;
 }
 
@@ -21314,6 +21335,13 @@ label {
     margin: 0;
 }
 
+
+@media screen and (max-width: 768px) {
+    #top section.py-4.bg-soft-dark.rounded-3 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 /*---------------------------------------*/
 
@@ -21424,7 +21452,7 @@ margin-top: 6px;
 
 .parcel-attributes span.value {
     word-wrap: break-word;
-    word-break: break-word;
+    word-break: normal;
 }
 
 .parcel-attributes span.value {
@@ -21467,7 +21495,7 @@ margin-top: 6px;
     /* top: -110px;
     height: 96%; */
     top: 20px;
-    height: calc(100% - 220px);
+    height: calc(100% - 205px);
 }
 
 .timeline li:last-child::after {
@@ -21475,13 +21503,13 @@ margin-top: 6px;
 }
 
     .timelineBody .timeline {
-    padding: 0 1rem 0 0 !important;
+    padding: 1rem 1rem 0 0 !important;
 }
 
     .timelineWorkService {
     width: 82%;
     padding: 1rem;
-    margin-top: 0rem;
+    margin-top: -1rem;
 }
 
 .timelineWorkService-wrapper {

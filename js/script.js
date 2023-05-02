@@ -15,11 +15,11 @@ if (window.Swiper) {
 			320: {
 				slidesPerView: 2
 			},
-			991: {
-				slidesPerView: 3
+			768: {
+				slidesPerView: 4
 			},
 			1200: {
-				slidesPerView: 5
+				slidesPerView: 8
 			}
 		}
 	});
