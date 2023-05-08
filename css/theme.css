@@ -7697,6 +7697,66 @@ fieldset:disabled .btn {
     color: #fff6f7;
     font-size: 3rem;
 }
+
+/* .tg-icon {
+    transition: .3s;
+}
+
+.sidebar .tg-icon {
+    max-width: 24px;
+}
+
+.tg-icon:hover {
+    transform: scale(1.1);
+} */
+
+.tg-button {
+    border: 2px solid #fff;
+    border-radius: 0 15px 15px 15px;
+    color: #fff !important;
+    text-decoration: none !important;
+    width: 100%;
+    max-width: 180px;
+    font-weight: 600;
+    position: relative;
+    transform: translateZ(0);
+    overflow: hidden;
+}
+
+.sidebar .tg-button {
+    color: #000 !important;
+    border-color: #000;
+    border-radius: 15px;
+}
+
+.sidebar .tg-button img {
+    filter: invert(1);
+}
+
+.tg-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(49deg, rgba(200,153,214,1) 0%, rgba(183,125,206,1) 20%, rgba(132,81,211,1) 65%, rgba(141,85,218,1) 100%);
+    transition: 0.2s ease-in-out;
+    z-index: -1;
+}
+
+.sidebar .tg-button::before {
+    background: rgba(245, 240, 252, 0.7);
+}
+
+.tg-button:hover::before {
+    width: 100%;
+}
+
+.tg-button .tg-icon {
+    max-width: 25px;
+}
+
 .section-slider p {
     color: #fff6f7;
     font-size: 1.4rem;
@@ -7722,7 +7782,7 @@ fieldset:disabled .btn {
 @media screen and (max-width: 767px) {
     .section-slider h2 {
         color: #fff6f7;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .section-slider p {
