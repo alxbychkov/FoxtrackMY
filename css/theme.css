@@ -21595,12 +21595,16 @@ margin-top: 6px;
     margin-top: 0;
 }
 
+.timelineWorkService-wrapper .d-flex.justify-content-between {
+    flex-direction: column;
+}
+
     .timelineDate-sm {
     display: block;
     font-size: 1rem;
-    flex: 0 0 100px;
+    /*flex: 0 0 100px;*/
     padding: 0.2rem;
     font-weight: 500;
-    text-align: right;
+    /*text-align: right;*/
     }
 }
