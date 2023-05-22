@@ -39,4 +39,15 @@ if (window.Swiper) {
 	});
 }
 
-$('.collapse').collapse()
+$('.collapse').collapse();
+
+$(document).ready(function() {
+	$('.image-slider_wrapper').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true
+		}
+	});
+});
